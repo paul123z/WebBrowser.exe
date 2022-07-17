@@ -15,6 +15,7 @@ namespace MicrosoftBrowser
         public Form1()
         {
             InitializeComponent();
+            webBrowser3.ScriptErrorsSuppressed = true;
         }
         //navigate functionn that is custom by us
         private void NavigateToPage() {
@@ -80,7 +81,7 @@ namespace MicrosoftBrowser
 
         private void pleaseReadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This browser is relatively outdated and does not work with modern websites that require advanced scripting like yahoo.com or youtube.com. Please feel free to test it with bing and simple websites.\n\nGuide: type the website's URL address into the URL bar in the format 'https://www.websitename.com'\nThen hit Enter or click Search\n\nHave a nice day, you're a legend for checking out this project!\n\nMade in C# with .NET framework\n\n@Pavol Lantaj 2022\nContact: pavol.lantaj@gmail.com");
+            MessageBox.Show("This is a simple web browser to surf the internet. I suggest using Bing as the search engine.\n\nGuide: type the website's URL address into the URL bar in the format 'https://www.websitename.com'\nThen hit Enter or click Search\n\nHave a nice day, you're a legend for checking out this project!\n\nMade in C# with .NET framework\n\n@Pavol Lantaj 2022\nContact: pavol.lantaj@gmail.com");
         }
     }
 }
